@@ -9,7 +9,7 @@ import pandas as pd
 import plotly.express as px
 from pypdf import PdfReader
 from fpdf import FPDF
-from modulos.gemini_client import consultar_gemini
+from gemini_client import consultar_gemini
 
 st.set_page_config(page_title="Hub de Inteligência Financeira & Controladoria", layout="wide")
 
