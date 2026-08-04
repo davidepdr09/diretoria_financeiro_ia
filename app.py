@@ -1,7 +1,7 @@
 import sys
 import os
 
-# Adiciona o diretório atual ao caminho de busca do Python (resolve o erro no Streamlit Cloud)
+# Garante que o Streamlit Cloud encontre a pasta 'modulos' na raiz do projeto
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 import streamlit as st
@@ -9,7 +9,7 @@ import pandas as pd
 import plotly.express as px
 from pypdf import PdfReader
 from fpdf import FPDF
-from modulos.gemini_client import consultar_gemini  # Importa do arquivo correto
+from modulos.gemini_client import consultar_gemini
 
 st.set_page_config(page_title="Hub de Inteligência Financeira & Controladoria", layout="wide")
 
